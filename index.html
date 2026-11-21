@@ -265,7 +265,7 @@ h1 em{color:var(--gold);font-style:italic}
   <header>
     <p class="eyebrow">Advent 2026 · Bea &amp; Robert</p>
     <h1>24 kleine <em>Momente</em></h1>
-    <p class="sub">Jeden Tag ein Türchen. Höchstens zehn Minuten. Nur ihr zwei.</p>
+    <p class="sub">Jeden Tag ein Türchen. Höchstens zehn Minuten. Nur wir zwei.</p>
     <div class="countdown" id="countdown"></div>
     <div id="prep"></div>
     <svg class="skyline" viewBox="0 0 400 120" aria-hidden="true">
@@ -979,7 +979,7 @@ function renderGrid(){
     grid.appendChild(b);
   });
   renderProgress();
-  $('#legend').innerHTML = Object.values(DAYS).some(x => x.spicy) ? `<span>${UI.flame}Knister-Türchen – erst öffnen, wenn ihr ungestört seid</span>` : '';
+  $('#legend').innerHTML = Object.values(DAYS).some(x => x.spicy) ? `<span>${UI.flame}Knister-Türchen – erst öffnen, wenn ungestört</span>` : '';
 }
 function renderProgress(){ $('#progress').textContent = `${store.get().filter(unlocked).length} von 24 Türchen geöffnet`; }
 
